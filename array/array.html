@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+  
+  
+  
+  
+    <script defer>
+        // defer 속성은 페이지가 모두 로드된 후에 해당 외부 스크립트가 실행됨을 명시 
+        //배열에 사용할수 있는 자료형
+        //배열에 사용할 수 있는 요소는 모든 자료형이다.
+        const numbers=[1, 2, 3, 4, 5];
+
+        console.log(numbers);/* 배열 요소 갯수 확인*/
+        console.log(numbers.length);
+
+
+        /* 배열요소 접근*/
+        console.log(numbers[0]);
+
+        for (let i =0 ; i<numbers.legth; i++);{
+        console.log(numbers[1]);
+        }
+
+        /*배열 요소 추가*/
+        numbers.push(100);
+        console.log(numbers);
+        // numbers[6]=200;
+        // 위치를 선택하여 요소를 추가할수 있음 
+        numbers[10]=200;
+        console.log(numbers);
+
+        //특정 위치에 배열 추가 :array.splice(index,delete);
+        let strings=['a','b','c','d','e'];/*strings :문자열*/
+        strings.splice(1,1);
+        console.log(strings);
+        
+        //array.splice(index,delete,add);
+        //index번째 , delete만큼 삭제하고, add를 추가 (대체함)
+        //delete= 0으로 두고 추가 요소를 "","" 형식으로 작성하면 추가로 들어감
+        strings.splice(1,1,"x");
+        console.log(strings);
+
+
+        //map 매서드 :배열에 있는 모든 요소에 특정 기능을 실행시키는 매서드
+        // let numbersSqrt=numbers.map(function(x){
+        //     return x * x;
+        // });
+
+        let numbersSqrt= numbers.map((x)=> x * x);
+        console.log(numbersSqrt);
+
+      // 화살표 함수의 예
+        // 1. 선언적 함수
+        function sumNum(a,b){
+            return a+b;
+        
+        }
+        console.log(sumNum[5, 7])
+        
+        //2.익명 함수
+        let sumNum =function(a,b){
+        return a+b;
+        }
+        
+        // 3.화살표 함수의 예 (여러줄의 정의 코드를 쓸 경우 잘 사용하지 않는다.)
+        let sumNum =(a,b)=>{
+            return a+ b;
+        }
+        
+        
+        
+        
+        // 요소 (인덱스/값)
+        // 객체 (키/)
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
